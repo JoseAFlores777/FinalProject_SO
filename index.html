@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Blank</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+        <!-- Custom styles for this page -->
+        <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <img style="height: 60px;" src="assets/CEUTEC-logo-03.png" alt="">
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-address-book"></i>
+                    <span>Portada</span></a>
+            </li>
+
+           
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Acciones
+            </div>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="far fa-question-circle"></i>
+                    <span>Preguntas</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-car"></i>
+                    <span>Vehiculos</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <div class="col-12 text-center">
+                        <h2>Laboratorio 6 - Equipo #2</h2>
+                    </div>
+                    
+
+                </nav>
+                <!-- End of Topbar -->
+
+
+
+                <!-- Begin Page Content -->
+
+                <div id="portada" class="container-fluid">
+
+                     <!-- Page Heading -->
+                     <h1 class="h3 mb-2 text-gray-800">Portada</h1>
+
+                        <hr>
+
+                    <div class="mt-5 col-12 text-center">
+                        <h1>Integrantes Del Equipo</h1>
+                    </div>
+
+                    <div class="row mt-5 mb-5">
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/Heber.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Heber Portillo</h5>
+                                    <div class="card-text text-center"><strong>31911302</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/José.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">José Adolfo Izaguirre Flores</h5>
+                                    <div class="card-text text-center"><strong>31951008</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/José.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">José Adolfo Izaguirre Flores</h5>
+                                    <div class="card-text text-center"><strong>31951008</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div id="preguntas" class="container-fluid">
+
+                     <!-- Page Heading -->
+                     <h1 class="h3 mb-2 text-gray-800">Preguntas</h1>
+
+                        <hr>
+
+                    <div class="mt-5 col-12 text-center">
+                        <h1>Lista de Preguntas</h1>
+                    </div>
+
+                    <div class="accordion mt-5" id="accordionExample">
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="A">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseA" aria-expanded="true" aria-controls="collapseOne">
+                                        A. ¿En qué consiste el “Simultaneous Multithreading”?
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseA" class="collapse" aria-labelledby="A" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    El multihilo simultaneo, acrónimo SMT, es una técnica para mejorar la eficiencia general de las CPU
+                                    superescalares con multihilo de hardware. SMT permite múltiples hilos de ejecución independientes para
+                                    utilizar mejor los recursos proporcionados por las modernas arquitecturas informáticas.
+                                    El multihilo es similar en concepto a la multitarea, pero se implementa a nivel de hilo de ejecución en
+                                    los modernos procesadores superescalares.
+                                    <cite>(Multihilo simultáneo, 2021)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> Multihilo simultáneo. (2021, mayo 9). [Pagina web].
+                                        es.Alegsaonline.com. https://es.alegsaonline.com/art/90586
+                                    </p>
+                    
+                                    <p class="mt-3"><a target="_blank" href="https://alexbasededatos.wordpress.com/2016/09/23/sistemas-operativos-problema-de-los-filosofos/">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="B">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseB" aria-expanded="true" aria-controls="collapseOne">
+                                        B. ¿Cuál es la diferencia entre los multiprocesadores UMA y multiprocesadores NUMA?
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseB" class="collapse" aria-labelledby="B" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>El modelo UMA (memoria compartida) utiliza uno o dos controladores de memoria. A diferencia,
+                                            NUMA puede tener varios controladores de memoria para acceder a la memoria.</li>
+                                        <li>Los buses simples, múltiples y de barra cruzada se utilizan en la arquitectura UMA. A la
+                                            inversa, NUMA utiliza buses de tipo jerárquico y de árbol y conexión de red.</li>
+                                        <li>En UMA, el tiempo de acceso a la memoria para cada procesador es el mismo que en NUMA el tiempo
+                                            de acceso a la memoria cambia a medida que cambia la distancia de la memoria del procesador.
+                                        </li>
+                                        <li>Las aplicaciones de uso general y de tiempo compartido son adecuadas para las máquinas UMA. En
+                                            contraste, la aplicación adecuada para NUMA es en tiempo real y está centrada en el tiempo.</li>
+                                        <li>Los sistemas paralelos basados en UMA funcionan más lentamente que los sistemas NUMA.</li>
+                                        <li>Cuando se trata de UMA de ancho de banda, tiene un ancho de banda limitado. Por el contrario,
+                                            NUMA tiene un ancho de banda mayor que UMA.</li>
+                                    </ul>
+                    
+                                    <cite>(Diferencia entre UMA y NUMA, 2019)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> Diferencia entre UMA y NUMA. (2019). [Pagina web]. Gadget - info.com.
+                                        https://es.gadget-info.com/difference-between-uma
+                                    </p>
+                                    <p class="mt-3"><a target="_blank" href="https://www.netinbag.com/es/internet/what-is-the-readers-writers-problem.html">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="C">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseC" aria-expanded="true" aria-controls="collapseOne">
+                                        C. ¿En qué consiste el “Problema de los filósofos Comelones” en Sistemas Operativos?
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseC" class="collapse" aria-labelledby="C" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    El problema de la cena de los filósofos o problema de los filósofos cenando es un problema clásico de
+                                    las ciencias de la computación propuesto por Edsger Dijkstra en 1965 para representar el problema de la
+                                    sincronización de procesos en un sistema operativo. Cabe aclarar que la interpretación está basada en
+                                    pensadores chinos, quienes comían con dos palillos, donde es más lógico que se necesite el del comensal
+                                    que se siente al lado para poder comer.
+                    
+                                    <cite>(CODEGALUF, 2016)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> CODEGALUF. (2016, septiembre 23). Sistemas Operativos – Problema de los
+                                        Filosofos [Blog]. Galuf space.
+                                        https://alexbasededatos.wordpress.com/2016/09/23/sistemas-operativos-problema-de-los-filosofos/
+                                    </p>
+                                    <p class="mt-3"><a target="_blank" href="https://es.gadget-info.com/difference-between-uma">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="D">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseD" aria-expanded="true" aria-controls="collapseOne">
+                                        D. Describa el Problema de los Lectores y Escritores en Sistemas Operativos.
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseD" class="collapse" aria-labelledby="D" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    El “problema de lectores y escritores” es un dilema de programación creado cuando varios lectores y
+                                    escritores necesitan acceder al mismo recurso. Si se les permitiera el acceso a todos a la vez, podrían
+                                    surgir problemas como sobrescripciones, información incompleta y otros problemas. Por lo tanto, los
+                                    programadores pueden restringir el acceso para controlar que subprocesos de procesamiento ven el recurso
+                                    y cuando, considerando las necesidades del sistema y los usuarios. Hay varias formas de abordar el
+                                    problema de lectores – escritores. Una de las soluciones más comunes implica el uso de semáforos para
+                                    marcar el estado y controlar el acceso.
+                    
+                                    <cite>(¿Cuál es el problema de los lectores y escritores?, s. f.)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> ¿Cuál es el problema de los lectores y escritores? (s. f.). [Pagina
+                                        web]. Netinbag.com. Recuperado 20 de noviembre de 2021, de
+                                        https://www.netinbag.com/es/internet/what-is-the-readers-writers-problem.html
+                                    </p>
+                                    <p class="mt-3"><a target="_blank" href="https://www.xataka.com/basics/que-significa-que-mi-cpu-sea-de-32-o-64-bits-y-cual-es-la-diferencia">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="E">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseE" aria-expanded="true" aria-controls="collapseOne">
+                                        E. ¿Qué es la Magnetoresistive random-access memory (MRAM)?
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseE" class="collapse" aria-labelledby="E" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    MRAM, es una tecnología cuyo momento aún no ha llegado, principalmente porque aún no se ha necesitado.
+                                    Sin embargo, muchos expertos creen que MRAM está en el horizonte y se implementará en cualquier momento.
+                                    MRAM utiliza elementos de almacenamiento magnético para almacenar sus datos. En concreto, dos placas es
+                                    un imán que se fija a una carga específica. La otra placa es variable, lo que permite cambiar la
+                                    polaridad según el tirón de los campos externos. Una colección de estos elementos conforma el
+                                    dispositivo de memoria MRAM.
+                    
+                                    <cite>(«¿Qué es MRAM?», 2020)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> ¿Qué es MRAM? - Características - Ejemplos - [2021 ]. (2020, noviembre
+                                        30). [Blog]. QueSignificado.org. https://quesignificado.org/que-es-mram/
+                                    </p>
+                                    <p class="mt-3"><a target="_blank" href="https://hardzone.es/tutoriales/rendimiento/memoria-cache-procesador-como-funciona/">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="F">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseF" aria-expanded="true" aria-controls="collapseOne">
+                                        F. ¿Cuál es la diferencia entre un Sistema Operativo de 32 bits y otro de 64 bits?
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseF" class="collapse" aria-labelledby="F" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    La principal diferencia entre ambas arquitecturas es que los procesadores de 32 bits no son capaces de
+                                    gestionar tanta memoria RAM como los de 64 bits. Si en un ordenador tenemos 8 GB o 16 GB de RAM, un
+                                    sistema operativo de 32 bits solo puede aprovechar un máximo de 4 GB. Los de 64 bits pueden utilizar
+                                    muchísimas más, teóricamente hasta 16 Exabytes, unos 16 millones de Terabytes.
+                    
+                                    <cite>(Fernández, 2021)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> Fernández, Y. (2021, abril 16). Qué significa que mi CPU sea de 32 o 64
+                                        bits y cuál es la diferencia [Pagina web]. Xataka.
+                                        https://www.xataka.com/basics/que-significa-que-mi-cpu-sea-de-32-o-64-bits-y-cual-es-la-diferencia
+                                    </p>
+                                    <p class="mt-3"><a target="_blank" href="https://es.alegsaonline.com/art/90586">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="G">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseG" aria-expanded="true" aria-controls="collapseOne">
+                                        G. ¿Cuál es la función del caché dentro de un CPU y con qué tipo de memoria se implementa?
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseG" class="collapse" aria-labelledby="G" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    La memoria caché no funciona igual que la memoria RAM, no podemos hacer que la CPU se dirija a una
+                                    dirección concreta dentro de la caché. Esto es debido a que lo que hace la caché es copiar los datos que
+                                    se encuentran en la RAM y son cercanos a la dirección de memoria que está ejecutando en ese momento la
+                                    CPU, por lo que la caché copia en su interior las direcciones de memoria más cercanas a la memoria
+                                    caché.
+                    
+                                    <cite>(Memoria caché del procesador, 2021)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> Memoria caché del procesador: Cómo funciona y por qué es importante.
+                                        (2021, septiembre 7). [Pagina web]. HardZone.
+                                        https://hardzone.es/tutoriales/rendimiento/memoria-cache-procesador-como-funciona/
+                                    </p>
+                                    <p class="mt-3"><a target="_blank" href="https://www.geeknetic.es/Buffer/que-es-y-para-que-sirve">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card">
+                            <div class="card-header" id="H">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseH" aria-expanded="true" aria-controls="collapseOne">
+                                        H. ¿Qué es un buffer?
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseH" class="collapse" aria-labelledby="H" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    El buffer es un espacio temporal de memoria física el cual se usa para almacenar información mientras se
+                                    envía de un lado a otro. Los buffers se pueden encontrar en todo tipo de dispositivos electrónicos,
+                                    desde el nivel de circuitos hasta el nivel de la comunicación entre dispositivos como por ejemplo en el
+                                    funcionamiento del internet. Los buffers son tan comunes por su función, que es paliar la diferencia de
+                                    velocidad de transmisión o procesamiento entre dos dispositivos o procesos por eso están por todos lados
+                                    en un ordenador: en discos duros, procesadores, RAM, impresoras… y su tamaño y características pueden
+                                    afectar al rendimiento del dispositivo. (¿Qué es el Buffer y Para Qué Sirve?, 2021)
+                    
+                                    <cite>(Multihilo simultáneo, 2021)</cite>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <strong>Referencia:</strong> Multihilo simultáneo. (2021, mayo 9). [Pagina web].
+                                        es.Alegsaonline.com. https://es.alegsaonline.com/art/90586
+                                    </p>
+                                    <p class="mt-3"><a target="_blank" href="https://quesignificado.org/que-es-mram/">Más Información</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                    </div>
+
+
+                </div>
+
+
+                <div id="vehiculos" class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Vehículos</h1>
+                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
+                        For more information about DataTables, please visit the <a target="_blank"
+                            href="https://datatables.net">official DataTables documentation</a>.</p>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                    <h6 class="m-0 font-weight-bold text-primary">Vehículos</h6>
+                                </div>
+                                <div class="col-4 ">
+                                    <button class="btn btn-outline-success float-right">
+                                        Agregar Vehículo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                            <td>2011/07/25</td>
+                                            <td>$170,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>
+                                            <td>$433,060</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>
+                                            <td>$162,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02</td>
+                                            <td>$372,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>2012/08/06</td>
+                                            <td>$137,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Tokyo</td>
+                                            <td>55</td>
+                                            <td>2010/10/14</td>
+                                            <td>$327,900</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>2009/09/15</td>
+                                            <td>$205,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sonya Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>2008/12/13</td>
+                                            <td>$103,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jena Gaines</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>2008/12/19</td>
+                                            <td>$90,560</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quinn Flynn</td>
+                                            <td>Support Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2013/03/03</td>
+                                            <td>$342,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charde Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>36</td>
+                                            <td>2008/10/16</td>
+                                            <td>$470,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Haley Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>2012/12/18</td>
+                                            <td>$313,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tatyana Fitzpatrick</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>19</td>
+                                            <td>2010/03/17</td>
+                                            <td>$385,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Silva</td>
+                                            <td>Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>66</td>
+                                            <td>2012/11/27</td>
+                                            <td>$198,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paul Byrd</td>
+                                            <td>Chief Financial Officer (CFO)</td>
+                                            <td>New York</td>
+                                            <td>64</td>
+                                            <td>2010/06/09</td>
+                                            <td>$725,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloria Little</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>59</td>
+                                            <td>2009/04/10</td>
+                                            <td>$237,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13</td>
+                                            <td>$132,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dai Rios</td>
+                                            <td>Personnel Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>35</td>
+                                            <td>2012/09/26</td>
+                                            <td>$217,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jenette Caldwell</td>
+                                            <td>Development Lead</td>
+                                            <td>New York</td>
+                                            <td>30</td>
+                                            <td>2011/09/03</td>
+                                            <td>$345,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yuri Berry</td>
+                                            <td>Chief Marketing Officer (CMO)</td>
+                                            <td>New York</td>
+                                            <td>40</td>
+                                            <td>2009/06/25</td>
+                                            <td>$675,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>2011/12/12</td>
+                                            <td>$106,450</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Doris Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Sidney</td>
+                                            <td>23</td>
+                                            <td>2010/09/20</td>
+                                            <td>$85,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2009/10/09</td>
+                                            <td>$1,200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin Joyce</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>42</td>
+                                            <td>2010/12/22</td>
+                                            <td>$92,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Chang</td>
+                                            <td>Regional Director</td>
+                                            <td>Singapore</td>
+                                            <td>28</td>
+                                            <td>2010/11/14</td>
+                                            <td>$357,650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>28</td>
+                                            <td>2011/06/07</td>
+                                            <td>$206,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fiona Green</td>
+                                            <td>Chief Operating Officer (COO)</td>
+                                            <td>San Francisco</td>
+                                            <td>48</td>
+                                            <td>2010/03/11</td>
+                                            <td>$850,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shou Itou</td>
+                                            <td>Regional Marketing</td>
+                                            <td>Tokyo</td>
+                                            <td>20</td>
+                                            <td>2011/08/14</td>
+                                            <td>$163,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michelle House</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Sidney</td>
+                                            <td>37</td>
+                                            <td>2011/06/02</td>
+                                            <td>$95,400</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suki Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>53</td>
+                                            <td>2009/10/22</td>
+                                            <td>$114,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prescott Bartlett</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>27</td>
+                                            <td>2011/05/07</td>
+                                            <td>$145,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin Cortez</td>
+                                            <td>Team Leader</td>
+                                            <td>San Francisco</td>
+                                            <td>22</td>
+                                            <td>2008/10/26</td>
+                                            <td>$235,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Martena Mccray</td>
+                                            <td>Post-Sales support</td>
+                                            <td>Edinburgh</td>
+                                            <td>46</td>
+                                            <td>2011/03/09</td>
+                                            <td>$324,050</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unity Butler</td>
+                                            <td>Marketing Designer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/12/09</td>
+                                            <td>$85,675</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Howard Hatfield</td>
+                                            <td>Office Manager</td>
+                                            <td>San Francisco</td>
+                                            <td>51</td>
+                                            <td>2008/12/16</td>
+                                            <td>$164,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hope Fuentes</td>
+                                            <td>Secretary</td>
+                                            <td>San Francisco</td>
+                                            <td>41</td>
+                                            <td>2010/02/12</td>
+                                            <td>$109,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vivian Harrell</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>62</td>
+                                            <td>2009/02/14</td>
+                                            <td>$452,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Timothy Mooney</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>37</td>
+                                            <td>2008/12/11</td>
+                                            <td>$136,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jackson Bradshaw</td>
+                                            <td>Director</td>
+                                            <td>New York</td>
+                                            <td>65</td>
+                                            <td>2008/09/26</td>
+                                            <td>$645,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Olivia Liang</td>
+                                            <td>Support Engineer</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2011/02/03</td>
+                                            <td>$234,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>38</td>
+                                            <td>2011/05/03</td>
+                                            <td>$163,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sakura Yamamoto</td>
+                                            <td>Support Engineer</td>
+                                            <td>Tokyo</td>
+                                            <td>37</td>
+                                            <td>2009/08/19</td>
+                                            <td>$139,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thor Walton</td>
+                                            <td>Developer</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2013/08/11</td>
+                                            <td>$98,540</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Finn Camacho</td>
+                                            <td>Support Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/07/07</td>
+                                            <td>$87,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Serge Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2012/04/09</td>
+                                            <td>$138,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zenaida Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td>63</td>
+                                            <td>2010/01/04</td>
+                                            <td>$125,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zorita Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>56</td>
+                                            <td>2012/06/01</td>
+                                            <td>$115,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Acosta</td>
+                                            <td>Junior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>43</td>
+                                            <td>2013/02/01</td>
+                                            <td>$75,650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011/12/06</td>
+                                            <td>$145,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hermione Butler</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2011/03/21</td>
+                                            <td>$356,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lael Greer</td>
+                                            <td>Systems Administrator</td>
+                                            <td>London</td>
+                                            <td>21</td>
+                                            <td>2009/02/27</td>
+                                            <td>$103,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>30</td>
+                                            <td>2010/07/14</td>
+                                            <td>$86,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008/11/13</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011/06/27</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011/01/25</td>
+                                            <td>$112,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Equipo #2 &copy; Sistemas Operativos I 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+            <!-- Page level custom scripts -->
+    <script>
+        $(document).ready(function() {
+  $('#dataTable').DataTable();
+});
+
+    </script>
+
+</body>
+
+</html>
