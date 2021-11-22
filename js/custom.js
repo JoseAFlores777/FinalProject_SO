@@ -1,5 +1,11 @@
 jQuery(document).ready(function($){
 
+    $.ajax({
+        url: 'portada.html',
+    })
+    .done(function(html){
+        $("#page").empty().append(html);
+    })
     
 
     $("a").click(function(event){
