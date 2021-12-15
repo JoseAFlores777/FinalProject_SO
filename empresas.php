@@ -1,18 +1,18 @@
-<div id="vehiculos">
+<div id="empresas">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Vehículos</h1>
+    <h1 class="h3 mb-2 text-gray-800">Empresas</h1>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <div class="row justify-content-between">
                 <div class="col-4">
-                    <h6 class="m-0 font-weight-bold text-primary">Vehículos</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Empresas</h6>
                 </div>
                 <div class="col-4 ">
-                    <button id="addVehiculo" class="btn btn-outline-success float-right">
-                        Agregar Aplicante
+                    <button id="addEmpresa" class="btn btn-outline-success float-right">
+                        Agregar Empresa
                     </button>
                 </div>
             </div>
@@ -24,10 +24,8 @@
                         <tr>
                             <th>Codigo</th>
                             <th>Nombre</th>
-                            <th>Profesion</th>
                             <th>Tel</th>
                             <th>Dir</th>
-                            <th>Email</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -35,10 +33,8 @@
                         <tr>
                             <th>Codigo</th>
                             <th>Nombre</th>
-                            <th>Profesion</th>
                             <th>Tel</th>
                             <th>Dir</th>
-                            <th>Email</th>
                             <th>Status</th>
 
                         </tr>
@@ -46,28 +42,24 @@
                     <tbody>
                         <?php include('database.php');
 
-                        $Consulta = "select *from Aplicantes;";
+                        $Consulta = "select * from Empresas;";
                         $Resultado = $VCon->query($Consulta);
 
                         while ($Fila = $Resultado->fetch_assoc()) {
 
                             $id = $Fila["id"];
                             $Nombre = $Fila["Nombre"];
-                            $Profesion = $Fila["Profesion"];
                             $Tel = $Fila["Tel"];
                             $Dir = $Fila["Dir"];
-                            $Email = $Fila["Email"];
-                            $Status = $Fila["Status"];
+                            $status = $Fila["status"];
 
 
                             echo "<tr>";
                             echo "<td>$id</td>";
                             echo "<td>$Nombre</td>";
-                            echo "<td>$Profesion</td>";
                             echo "<td>$Tel</td>";
                             echo "<td>$Dir</td>";
-                            echo "<td>$Email</td>";
-                            echo "<td>$Status</td>";
+                            echo "<td>$status</td>";
                             echo "</tr>";
                         }
 
@@ -87,41 +79,22 @@
     $(document).ready(function() {
         $('#dataTable').DataTable();
 
-        $('#addVehiculo').click(async function() {
+        $('#addEmpresa').click(async function() {
             const {
                 value: formValues
             } = await Swal.fire({
-                title: 'Agregar un Vehiculo ',
-                html: '<label for="swal-input1">Codigo</label>' +
-                    '<input id="swal-input1" class="swal2-input">' +
-                    '<label for="swal-input2">Nombre</label>' +
-                    '<input id="swal-input2" class="swal2-input">' +
-                    '<label for="swal-input3">Profesion</label>' +
-                    '<input id="swal-input3" class="swal2-input">' +
-                    '<label for="swal-input4">Tel</label>' +
-                    '<input id="swal-input4" class="swal2-input">' +
-                    '<label for="swal-input5">Dir</label>' +
-                    '<input id="swal-input5" class="swal2-input">' +
-                    '<label for="swal-input6">Email</label>' +
-                    '<input id="swal-input6" class="swal2-input">' +
-                    '<label for="swal-input7">Status</label>' +
-                    '<input id="swal-input7" class="swal2-input">' +
-                    '<label for="swal-input8">Traccion</label>' +
-                    '<input id="swal-input8" class="swal2-input">' +
-                    '<label for="swal-input9">Precio</label>' +
-                    '<input id="swal-input9" class="swal2-input">',
-                focusConfirm: false,
+                html:
+          'Agrega tus datos para optimizar el llenado de los formularios' +
+          '<input type="text" id="swal-input1" placeholder="Nombre de la Empresa" class="swal2-input">' +
+          '<input type="text" id="swal-input2" placeholder="Telefono" class="swal2-input">' +
+          '<input type="text" id="swal-input3" placeholder="Dirección" class="swal2-input">' +
+          '<select type="text" id="swal-input4" class="form-select" aria-label="Default select example"><option value="" selected>Seleccione el Status</option><option value="Con Cupos">Con Cupos</option><option value="Sin Cupos">Sin Cupos</option></select>',
                 preConfirm: () => {
                     return [
                         document.getElementById('swal-input1').value,
                         document.getElementById('swal-input2').value,
                         document.getElementById('swal-input3').value,
                         document.getElementById('swal-input4').value,
-                        document.getElementById('swal-input5').value,
-                        document.getElementById('swal-input6').value,
-                        document.getElementById('swal-input7').value,
-                        document.getElementById('swal-input8').value,
-                        document.getElementById('swal-input9').value
                     ]
                 }
             })
@@ -133,7 +106,7 @@
                 })
 
                 $.ajax({
-                    url: "addVehicles.php",
+                    url: "addEmpresas.php",
                     type: 'post',
                     data: {
                         ...formValues
@@ -141,10 +114,11 @@
                     success: function(data) {
                         var json = JSON.parse(data);
                         var status = json.status;
+                        console.log('json',data)
 
                         if (status == 'true') {
                             $.ajax({
-                                    url: 'vehiculos.php',
+                                    url: 'empresas.php',
                                 })
                                 .done(function(html) {
                                     $("#page").empty().append(html);
@@ -152,7 +126,7 @@
 
                             Swal.fire(
                                 'Exito!',
-                                'El vehiculo se ha agregado',
+                                'Empresa agregada',
                                 'success'
                             )
                         } else {
