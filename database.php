@@ -2,8 +2,8 @@
 
 $Sevidor = "127.0.0.1";
 $Usuario = "jaif";
-$Clave = "Tapas777";
-$BD = "SO1";
+$Clave = "jaif";
+$BD = "AgenciaEmpleo";
 
 $VCon = mysqli_connect($Sevidor, $Usuario, $Clave, $BD);
 

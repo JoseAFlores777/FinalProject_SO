@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-4 ">
                     <button id="addVehiculo" class="btn btn-outline-success float-right">
-                        Agregar Vehículo
+                        Agregar Aplicante
                     </button>
                 </div>
             </div>
@@ -23,57 +23,51 @@
                     <thead>
                         <tr>
                             <th>Codigo</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Color</th>
-                            <th>Anio</th>
-                            <th>Recorrido</th>
-                            <th>Motor</th>
-                            <th>Traccion</th>
-                            <th>Precio</th>
+                            <th>Nombre</th>
+                            <th>Profesion</th>
+                            <th>Tel</th>
+                            <th>Dir</th>
+                            <th>Email</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>Codigo</th>
-                            <th>Marca</th>
-                            <th>Modelo</th>
-                            <th>Color</th>
-                            <th>Anio</th>
-                            <th>Recorrido</th>
-                            <th>Motor</th>
-                            <th>Traccion</th>
-                            <th>Precio</th>
+                            <th>Nombre</th>
+                            <th>Profesion</th>
+                            <th>Tel</th>
+                            <th>Dir</th>
+                            <th>Email</th>
+                            <th>Status</th>
+
                         </tr>
                     </tfoot>
                     <tbody>
                         <?php include('database.php');
 
-                        $Consulta = "select *from Vehiculo;";
+                        $Consulta = "select *from Aplicantes;";
                         $Resultado = $VCon->query($Consulta);
 
                         while ($Fila = $Resultado->fetch_assoc()) {
 
-                            $Codigo = $Fila["codigo"];
-                            $Marca = $Fila["Marca"];
-                            $Modelo = $Fila["Modelo"];
-                            $Color = $Fila["Color"];
-                            $Anio = $Fila["Anio"];
-                            $Recorrido = $Fila["Recorrido"];
-                            $Motor = $Fila["Motor"];
-                            $Traccion = $Fila["Traccion"];
-                            $Precio = $Fila["Precio"];
+                            $id = $Fila["id"];
+                            $Nombre = $Fila["Nombre"];
+                            $Profesion = $Fila["Profesion"];
+                            $Tel = $Fila["Tel"];
+                            $Dir = $Fila["Dir"];
+                            $Email = $Fila["Email"];
+                            $Status = $Fila["Status"];
+
 
                             echo "<tr>";
-                            echo "<td>$Codigo</td>";
-                            echo "<td>$Marca</td>";
-                            echo "<td>$Modelo</td>";
-                            echo "<td>$Color</td>";
-                            echo "<td>$Anio</td>";
-                            echo "<td>$Recorrido</td>";
-                            echo "<td>$Motor</td>";
-                            echo "<td>$Traccion</td>";
-                            echo "<td>$Precio</td>";
+                            echo "<td>$id</td>";
+                            echo "<td>$Nombre</td>";
+                            echo "<td>$Profesion</td>";
+                            echo "<td>$Tel</td>";
+                            echo "<td>$Dir</td>";
+                            echo "<td>$Email</td>";
+                            echo "<td>$Status</td>";
                             echo "</tr>";
                         }
 
@@ -100,17 +94,17 @@
                 title: 'Agregar un Vehiculo ',
                 html: '<label for="swal-input1">Codigo</label>' +
                     '<input id="swal-input1" class="swal2-input">' +
-                    '<label for="swal-input2">Marca</label>' +
+                    '<label for="swal-input2">Nombre</label>' +
                     '<input id="swal-input2" class="swal2-input">' +
-                    '<label for="swal-input3">Modelo</label>' +
+                    '<label for="swal-input3">Profesion</label>' +
                     '<input id="swal-input3" class="swal2-input">' +
-                    '<label for="swal-input4">Color</label>' +
+                    '<label for="swal-input4">Tel</label>' +
                     '<input id="swal-input4" class="swal2-input">' +
-                    '<label for="swal-input5">Anio</label>' +
+                    '<label for="swal-input5">Dir</label>' +
                     '<input id="swal-input5" class="swal2-input">' +
-                    '<label for="swal-input6">Recorrido</label>' +
+                    '<label for="swal-input6">Email</label>' +
                     '<input id="swal-input6" class="swal2-input">' +
-                    '<label for="swal-input7">Motor</label>' +
+                    '<label for="swal-input7">Status</label>' +
                     '<input id="swal-input7" class="swal2-input">' +
                     '<label for="swal-input8">Traccion</label>' +
                     '<input id="swal-input8" class="swal2-input">' +
