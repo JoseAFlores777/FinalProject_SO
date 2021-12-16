@@ -1,2 +1,2 @@
-# Lab6-SO1
+# Proyecto Final de Sistemas Operativos
 
